@@ -1,21 +1,19 @@
-import java.util.Scanner;
 public class CadastroAutor {
-		    public static void main(String[] args) {
-	        Scanner ler = new Scanner(System.in);
-
-	        String nome;
-	        String email;
-
-	        System.out.printf("Infome o nome do Autor..........: ");
-	        nome = ler.nextLine();
-
-	        System.out.printf("Infome o Email do Autor..........: ");
-	        email = ler.nextLine();
-
-	        System.out.print("Nome do Autor = ");
-	        System.out.println(nome);
-	        System.out.print("Email do Autor = ");
-	        System.out.println(email);
+		   public static void main(String[] args) {
+	  
+	       String nomeUsuario1 ="Suelen";
+	       String emailUsuario1 = "suelenaparecida@gmail.com";
+	    		   
+	       Autor usuario1 = new Autor(nomeUsuario1 , emailUsuario1);
+	       Autor usuario2 = new Autor();
+	       
+	       usuario2.setNome("Caian");
+	       usuario2.setEmail("caian@gmail.com");
+	       
+	        System.out.println("nome do autor 1: " + usuario1.getNome());
+	        System.out.println("email do autor 1: " + usuario1.getEmail());
+	        
+	        System.out.println("nome do autor 2:" + usuario2.getNome());
+	        System.out.println("nome do autor 2:" + usuario2.getEmail());
 	    }
 	}
-
