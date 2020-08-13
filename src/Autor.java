@@ -4,31 +4,19 @@ public class Autor {
 		private String email;
 		
 		public Autor(String nome, String email) {
-			this.nome = nome;
-			this.email = email;
+			setNome(nome);
+			setEmail(email);
 		}
 
-		
-		public Autor() {
-			
-		}
-
-		public String getNome() {
-			return nome;
-		}
-
-		public void setNome(String nome) {
+		private void setNome(String nome) {
 			if (nome == null || nome.isEmpty())
 				throw new IllegalArgumentException("o nome nao pode ser vazio ou nulo!");
 			this.nome = nome;
 			
 		}
 
-		public String getEmail() {
-			return email;
-		}
 
-		public void setEmail(String email) {
+		private void setEmail(String email) {
 			if(email == null || email.isEmpty())
 				throw new IllegalArgumentException("o email não pode ser vazio ou nulo!");
 			
@@ -36,8 +24,6 @@ public class Autor {
 	            throw new IllegalArgumentException("O formato do email não é valido!");
 			
 				System.out.println("Email válido");
-
-	
 			
 			this.email = email;
 			

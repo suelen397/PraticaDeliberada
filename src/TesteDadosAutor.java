@@ -6,16 +6,10 @@ public class TesteDadosAutor {
 		
 		System.out.println("Testando o salvamento do autor cadastrado");
 
-		Autor suelen = new Autor();
+		Autor suelen = new Autor("suelen", "suelen.aparecida@caelum.com");
 		
-		Autor wanderson = new Autor();
+		Autor wanderson = new Autor("wanderson", "suelen.aparecida@caelum.com");
 		
-		
-		suelen.setNome("suelen");
-		suelen.setEmail("suelen.aparecida@caelum.com");
-		
-		wanderson.setNome("wanderson");
-		wanderson.setEmail("suelen.aparecida@caelum.com");
 		
 		try {
 			testeDadosAutor.save(wanderson);
