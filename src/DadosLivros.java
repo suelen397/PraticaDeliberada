@@ -8,9 +8,9 @@ public class DadosLivros {
 	public void save(Livro livro) {
 		
 		if((DadosLivros.livros.add(livro)) ){
-			throw new IllegalArgumentException("Livro Cadastrado Com Sucesso No Sistema");
+			System.out.println("Livro Cadastrado Com Sucesso No Sistema");
 		} else {
-			throw new IllegalArgumentException("Esse Livro ja é cadastrado no Sistema");
+			throw new RuntimeException("Esse Livro ja é cadastrado no Sistema");
 		}
 			
 
