@@ -23,7 +23,7 @@ public class Autor {
 			if( !(email.matches("^([\\w-]\\.?)+@([\\w-]+\\.)+([A-Za-z]{2,4})+$")))
 	            throw new IllegalArgumentException("O formato do email não é valido!");
 			
-				System.out.println("Email válido");
+				//System.out.println("Email válido");
 			
 			this.email = email;
 			

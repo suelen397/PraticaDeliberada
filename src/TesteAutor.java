@@ -35,7 +35,7 @@ public class TesteAutor {
 			
 			try {
 				System.out.println("Testando email para ver se é válido");
-				new Autor("Suelen" , "suelen@gmail");
+				new Autor("Suelen" , "suelen@gmail.com");
 			}catch(IllegalArgumentException error) {
 				System.out.println(error.getMessage() + "\n");
 			}

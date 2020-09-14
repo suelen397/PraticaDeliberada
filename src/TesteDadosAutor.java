@@ -8,7 +8,7 @@ public class TesteDadosAutor {
 
 		Autor suelen = new Autor("suelen", "suelen.aparecida@caelum.com");
 		
-		Autor wanderson = new Autor("wanderson", "suelen.aparecida@caelum.com");
+		Autor wanderson = new Autor("wanderson", "wanderson.@caelum.com");
 		
 		
 		try {
